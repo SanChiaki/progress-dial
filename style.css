@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9e8ff;
+}
+
+/* .center {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #d9e8ff;
+  z-index:1;
+} */
+
+/* 半径 100px */
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width:100px;
+  background-color: #4e97fe;
+  transform-origin:bottom right;
+  transition: transform 0.5s;
+  transform: rotate(-135deg);
+}
+
+.mask-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width:100px;
+  background-color: white;
+  transform-origin:bottom right;
+  transition: transform 0.5s;
+  transform: rotate(-135deg);
+  z-index: 2;
+}
